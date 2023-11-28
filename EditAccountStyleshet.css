@@ -63,3 +63,7 @@ body {
 .identifier {
     display: none;
 }
+
+.bg-white {
+    background-color: #fff;
+}
