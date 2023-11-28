@@ -36,10 +36,12 @@
                       <li><a href="#">German</a></li>
                   </ul>
               </li>
-              <li><a href="#">View</a></li>
               <li><a href="#">File</a></li>
-              <li><a href="#">Help</a></li>
+              <li><a href="#">Account</a></li>
+              <li><a href="login">Log in</a></li>
+              <li><a href="#"><?php echo htmlspecialchars($_SESSION["username"]); ?></a></li>
           </ul>
+
         </div>
     </div>
 </nav>
