@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --th-bg: #6C761C;
+    --th-gr: #06424D;
+}
+
+.bg-custom {
+    background-color: var(--th-bg);
+}
+
+body {
+    font-family: poppins !important;
+}
+
+
+.custom-container {
+    width: 400px;
+    background-color: red;
+}
+
+.custom-h1 {
+    width: 100% !important;
+}
+
+.th-btn {
+    background-color: var(--th-gr);
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-weight: 300;
+}
+
+.form-control  {
+    border-color: var(--th-gr) !important;
+    border-radius: 0 !important;
+}
+
+.upload-area input[type='file']{
+    display: none;
+}
+
+.upload-btn {
+ background-color: #D9D9D9;
+ padding: 7px 12px;
+ cursor: pointer;
+ font-weight: 300;
+}
+
+.upload-btn::before {
+    font-family: "bootstrap-icons";
+    content: "\F603";
+    margin-right: 5px;
+    color: var(--th-gr);
+    vertical-align: middle;
+}
+
+.identifier {
+    display: none;
+}
