@@ -37,7 +37,6 @@
   }
 
 *{
-    font-family: cursive;
     box-sizing: padding-box;
 }
 
@@ -52,6 +51,7 @@ p {
     text-align: center;
     margin-bottom: 50px;
     color: #06424d;
+    
 
 }
 
@@ -59,6 +59,7 @@ h2 {
     text-align: center;
     margin-bottom: 40px;
     color: #06424d;
+    
 
 }
 
