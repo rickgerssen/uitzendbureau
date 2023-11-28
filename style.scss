@@ -51,3 +51,40 @@ footer{
     color: $color3;
     text-align: center;
 }
+
+.goog-te-gadget-simple .goog-te-gadget-icon {
+    display: none !important;
+}
+
+.goog-te-gadget-simple {
+    background: white!important;
+    border: 5px solid black!important;
+    position: absolute!important;
+    z-index: 11!important;
+}
+
+#google_translate_element .goog-te-menu-value span {
+    color: #0047AB!important;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    .goog-te-gadget-simple {
+        width: 100%!important;
+        left: 0!important;
+        top: 0!important;
+    }
+}
+
+.goog-te-gadget-simple {
+    background: white!important;
+    border: 5px solid black!important;
+    position: absolute!important;
+    left: 0!important;
+    top: 0px!important;
+    z-index: 11!important;
+}
+
+#google_translate_element .goog-te-menu-value span {
+    color: #0047AB!important;
+}
