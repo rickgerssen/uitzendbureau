@@ -12,7 +12,8 @@
     <title>Document</title>
 </head>
 <body>
-  <nav class="navbar navbar-default">
+    
+<nav class="navbar navbar-default">
     <div class="container-fluid">
       
       <div class="navbar-header">
@@ -38,13 +39,15 @@
               </li>
               <li><a href="#">File</a></li>
               <li><a href="#">Account</a></li>
-              <li><a href="login">Log in</a></li>
+              <li><a href="logout.php">Sign Out of Your Account</a></li>
               <li><a href="#"><?php echo htmlspecialchars($_SESSION["username"]); ?></a></li>
+              
           </ul>
 
         </div>
     </div>
 </nav>
+
 
 </body>
 </html>
