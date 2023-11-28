@@ -1,0 +1,26 @@
+$font: 'Poppins', 
+sans-serif;
+
+$color1:#ffffff;
+$color2:#6c761c;
+$color3:#06424d;
+$color4:#B9Bab5;
+
+$nav-bg: $color1;
+$body-bg: $color2;
+$blocks-bg: $color4;
+$footer-bg: $color1;
+
+
+html,
+body{
+    font-family: $font !important;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: $body-bg;
+}
+
+
