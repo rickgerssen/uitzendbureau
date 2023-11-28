@@ -10,5 +10,5 @@ $('input[type=file]').each(function() {
     });
 });
 
-// ddss
+// ddsss
 
