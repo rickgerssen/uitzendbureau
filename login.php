@@ -93,7 +93,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><!--link naar stylesheet-->
     <style>
         body {
             background-color: #0047AB;
@@ -114,7 +114,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body>
-    <div class="form-container">
+    <div class="form-container"><!--container-->
         <?php 
         if(!empty($login_err)){
             echo '<div class="alert alert-danger">' . $login_err . '</div>';
@@ -126,19 +126,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p class="text-center">Please fill in your credentials to login.</p>
             <div class="form-group">
                 <label for="username">Username</label>
-                <input type="text" name="username" id="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                <input type="text" name="username" id="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>"><!--Voeg gebruikers naam toe en check of er een gebruikers naam er staat-->
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </div>    
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+                <input type="password" name="password" id="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>"><!--Voeg wachtwoord toe en check of er een wachtwoord staat-->
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary btn-block" value="Login">
             </div>
-            <p class="text-center">Don't have an account? <a href="register.php">Sign up now</a>.</p>
-            <p class="text-center"><a href="reset-password.php" class="btn btn-warning">Reset Your Password</a></p>
+            <p class="text-center">Don't have an account? <a href="register.php">Sign up now</a>.</p><!--button voor registreer account-->
+            <p class="text-center"><a href="reset-password.php" class="btn btn-warning">Reset Your Password</a></p><!--button om wachtwoord te resetten-->
         </form>
     </div>
 
