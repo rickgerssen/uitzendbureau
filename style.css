@@ -6,7 +6,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  background-color: #6c761c !important;
+  background-color: #0047AB !important;
 }
 
 .welkom-title {
@@ -16,5 +16,26 @@ body {
   .welkom-title {
     margin-top: 150px;
     max-width: 30%;
+    color: #ffffff;
+    font-weight: 400;
   }
+}
+
+.navbar {
+  border-radius: inherit !important;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+  color: #06424d;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
