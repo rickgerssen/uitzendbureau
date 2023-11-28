@@ -48,7 +48,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
               <li><a href="#">File</a></li>
               <li><a href="#">Account</a></li>
               <li><a href="logout.php">Sign Out of Your Account</a></li>
-              <li><a href="#"><?php echo htmlspecialchars($_SESSION["username"]); ?></a></li>
+              <li><a><b><?php echo htmlspecialchars($_SESSION["username"]); ?><b></a></li>
               
           </ul>
 
@@ -72,5 +72,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             dolorem repellendus consequatur suscipit aperiam!
         </p>
     </div>
+    <?php include 'footer.php';?>
 </body>
 </html>
