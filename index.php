@@ -10,7 +10,8 @@
     <title>Homepage</title>
 </head>
 <body>
-    <div class="welkom-title col-xs-offset-3 col-xs-6 align-middle">
+<?php include 'navbar.php';?>
+    <div class="welkom-title col-xs-offset-1 col-xs-10 col-sm-8 col-sm-offset-3 col-md-6 col-lg-6">
         <h1>
             Welkom
         </h1>

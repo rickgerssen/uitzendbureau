@@ -20,11 +20,15 @@ body{
 body{
     margin:0;
     padding:0;
-    background-color: $body-bg;
+    background-color: $color2 !important;
 }
 
 .welkom-title{
-margin-top: 250px;
+margin-top: inherit;
+    @media only screen and (min-width: 800px) {
+margin-top: 150px;
+max-width: 30%;
+    }
 }
 
 

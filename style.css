@@ -6,9 +6,15 @@ body {
 body {
   margin: 0;
   padding: 0;
-  background-color: #6c761c;
+  background-color: #6c761c !important;
 }
 
 .welkom-title {
-  margin-top: 250px;
+  margin-top: inherit;
+}
+@media only screen and (min-width: 800px) {
+  .welkom-title {
+    margin-top: 150px;
+    max-width: 30%;
+  }
 }/*# sourceMappingURL=style.css.map */
