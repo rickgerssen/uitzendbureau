@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'nl',
+                includedLanguages: 'en,es,nl,fr', // Add the languages you want, separated by commas
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
@@ -32,9 +42,7 @@
                       Language <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
-                      <li><a href="#">English</a></li>
-                      <li><a href="#">Dutch</a></li>
-                      <li><a href="#">German</a></li>
+                  <li><div id="google_translate_element"></div></li>
                   </ul>
               </li>
               <li><a href="#">File</a></li>

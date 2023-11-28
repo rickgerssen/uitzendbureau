@@ -12,6 +12,16 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
  <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'nl',
+                includedLanguages: 'en,es,nl,fr', // Add the languages you want, separated by commas
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -42,9 +52,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                       Language <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
-                      <li><a href="#">English</a></li>
-                      <li><a href="#">Dutch</a></li>
-                      <li><a href="#">German</a></li>
+                  <li><div id="google_translate_element"></div></li>
                   </ul>
               </li>
               <li><a href="#">File</a></li>
