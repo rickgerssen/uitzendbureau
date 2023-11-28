@@ -38,4 +38,8 @@ footer {
   background-color: #ffffff;
   color: #06424d;
   text-align: center;
+}
+
+.goog-te-gadget-simple .goog-te-gadget-icon {
+  display: none !important;
 }/*# sourceMappingURL=style.css.map */
