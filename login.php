@@ -88,20 +88,33 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 ?>
  
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 360px; padding: 20px; }
+        body {
+            background-color: #0047AB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .form-container {
+            width: 90%;
+            max-width: 400px;
+            background: #fff;
+ 
+            padding: 20px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
-    <div class="wrapper">
-
+    <div class="form-container">
         <?php 
         if(!empty($login_err)){
             echo '<div class="alert alert-danger">' . $login_err . '</div>';
@@ -109,24 +122,28 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         ?>
         <!--Form with login and buttons for signup and reset password-->
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <h2>Login</h2>
-        <p>Please fill in your credentials to login.</p>
+            <h2 class="text-center">Login</h2>
+            <p class="text-center">Please fill in your credentials to login.</p>
             <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </div>    
             <div class="form-group">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login">
+                <input type="submit" class="btn btn-primary btn-block" value="Login">
             </div>
-            <p>Don't have an account? <a href="register.php">Sign up now</a>.</p><br>
-            <p><a href="reset-password.php" class="btn btn-warning">Reset Your Password</a></p>
+            <p class="text-center">Don't have an account? <a href="register.php">Sign up now</a>.</p>
+            <p class="text-center"><a href="reset-password.php" class="btn btn-warning">Reset Your Password</a></p>
         </form>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
