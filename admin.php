@@ -54,6 +54,12 @@
     </div>
 </nav>
 <h1>admin pagina</h1>
+
+<form><!--search form-->
+  <input type="text" placeholder="Search...">
+  <button type="submit">Search</button>
+</form>
+
 <footer>
         <div class="footer-top col-lg-6">
         <h3>
