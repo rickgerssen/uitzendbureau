@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (isset($_SESSION['user_id'])) {
+if (isset($_SESSION['loggedin'])) {
     // Voeg databaseconfiguratie toe
     $host = 'localhost';
     $user = 'root';
@@ -14,7 +14,7 @@ if (isset($_SESSION['user_id'])) {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $userId = $_SESSION['user_id'];
+    $userId = $_SESSION['loggedin'];
 
     // Hier aanpassen: Haal het chat-ID van de huidige gebruiker op
     $chatId = getChatId($conn, $userId);
