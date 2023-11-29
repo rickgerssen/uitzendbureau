@@ -28,7 +28,6 @@ body{
 margin-top: inherit;
     @media only screen and (min-width: 800px) {
 margin-top: 30px;
-max-width: 30%;
 color: $color1;
 font-weight: 400;
     }
@@ -90,3 +89,27 @@ footer{
     color: #0047AB!important;
 }
 
+.images{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin-top: -7px;
+@media only screen and (min-width: 280px) {
+   margin-top: 5px;
+}
+@media only screen and (min-width: 900px) {
+    gap: 200px;
+     }
+img{
+    max-width: 50%;
+    max-height: 50%;
+    @media only screen and (min-width: 560px) {
+        max-width: 250px;
+        max-height: 200px;
+        }
+        @media only screen and (max-width: 269px) {
+            display: none;
+             }
+}
+}
