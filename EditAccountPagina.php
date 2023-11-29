@@ -1,3 +1,13 @@
+<?php
+session_start();
+ 
+// Check if the user is already logged in, if yes then redirect him to welcome page
+if(!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] != true){
+    header("location: EditLogin");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +28,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css" integrity="sha512-D1liES3uvDpPrgk7vXR/hR/sukGn7EtDWEyvpdLsyalQYq6v6YUsTUJmku7B4rcuQ21rf0UTksw2i/2Pdjbd3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-custom">
-    <?php include 'TIJDELIJKE_NAVBAR.php'; ?>
+    <?php include 'navbar.php'; ?>
     <main class="bg-white">
         <div class="container p-4">
             <div class="row">
@@ -68,7 +78,7 @@
             </div>
         </div>
     </main>
-    <?php include 'TIJDELIJKE_FOOTER.php'; ?>
+    <?php include 'footer.php'; ?>
     <script src="EditAccountJS.js"></script>
 </body>
 </html>

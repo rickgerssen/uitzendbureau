@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script>
         function googleTranslateElementInit() {
@@ -10,17 +7,7 @@
                 layout: google.translate.TranslateElement.InlineLayout.SIMPLE
             }, 'google_translate_element');
         }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Document</title>
-</head>
-<body>
-    
+    </script> 
 <nav class="navbar navbar-default">
     <div class="container-fluid">
       
@@ -44,7 +31,7 @@
                   </ul>
               </li>
               <li><a href="#">File</a></li>
-              <li><a href="#">Account</a></li>
+              <li><a href="editaccountpagina.php">Account</a></li>
               <li><a href="logout.php">Sign Out of Your Account</a></li>
               <li><a href="#"><?php echo htmlspecialchars($_SESSION["username"]); ?></a></li>
               
@@ -52,8 +39,5 @@
 
         </div>
     </div>
-</nav>
+    </nav>  
 
-
-</body>
-</html>
