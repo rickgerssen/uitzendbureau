@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="EditAccountStyleshet.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&amp;display=swap" rel="stylesheet">
   <!-- Bootstrap plug-in  -->
   <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -22,7 +23,7 @@
         <div class="container p-4">
             <div class="row">
                 <div class="col-md-5 pb-3">
-                    <p class="h1 text-dark custom-h1">Edit Account</p>
+                    <h1 class="text-dark custom-h1">Edit Account</h1>
                     <hr>
                 </div>
             </div>
@@ -45,7 +46,7 @@
                         <label for="exampleInputPassword1" class="form-label">Re-type password</label>
                         <input type="password" class="form-control border-3" id="exampleInputPassword1">
                         </div>
-                        <div class="upload-area row">
+                        <div class="upload-area">
                             <div class="mb-3">
                                 <label for="fileUpload" class="upload-btn">
                                     <span>Choose file</span>
