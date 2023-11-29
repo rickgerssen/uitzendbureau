@@ -6,7 +6,7 @@
 
 :root {
     --th-bg: #6C761C;
-    --th-gr: #06424D;
+    --th-gr: #0047ab;
 }
 
 .bg-custom {
@@ -66,4 +66,8 @@ body {
 
 .bg-white {
     background-color: #fff;
+}
+
+.p-4 {
+    padding: 1.5rem!important;
 }

@@ -10,11 +10,13 @@ body {
 }
 
 .welkom-title {
+  
+  color: white !important;
   margin-top: inherit;
 }
 @media only screen and (min-width: 800px) {
   .welkom-title {
-    margin-top: 150px;
+    margin-top: 30px;
     max-width: 30%;
     color: #ffffff;
     font-weight: 400;
