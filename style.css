@@ -10,14 +10,12 @@ body {
 }
 
 .welkom-title {
-  
   color: white !important;
   margin-top: inherit;
 }
 @media only screen and (min-width: 800px) {
   .welkom-title {
     margin-top: 30px;
-    max-width: 30%;
     color: #ffffff;
     font-weight: 400;
   }
@@ -76,4 +74,37 @@ footer {
 
 #google_translate_element .goog-te-menu-value span {
   color: #0047AB !important;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin-top: -7px;
+}
+@media only screen and (min-width: 280px) {
+  .images {
+    margin-top: 5px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .images {
+    gap: 200px;
+  }
+}
+.images img {
+  max-width: 50%;
+  max-height: 50%;
+}
+@media only screen and (min-width: 560px) {
+  .images img {
+    max-width: 250px;
+    max-height: 200px;
+  }
+}
+@media only screen and (max-width: 269px) {
+  .images img {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
