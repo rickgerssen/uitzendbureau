@@ -24,9 +24,10 @@ body{
 }
 
 .welkom-title{
+    color: white !important;
 margin-top: inherit;
     @media only screen and (min-width: 800px) {
-margin-top: 150px;
+margin-top: 30px;
 max-width: 30%;
 color: $color1;
 font-weight: 400;
@@ -88,3 +89,4 @@ footer{
 #google_translate_element .goog-te-menu-value span {
     color: #0047AB!important;
 }
+
