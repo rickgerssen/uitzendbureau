@@ -124,10 +124,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <h2>Sign Up</h2>
-        <p>Please fill this form to create an account.</p>
+
+
+    <div class="form-container"><!--container-->
+        <?php 
+        if(!empty($login_err)){
+            echo '<div class="alert alert-danger">' . $login_err . '</div>';
+        }        
+        ?>
+        <!--Form with login and buttons for signup and reset password-->
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <h2 class="text-center">Sign Up</h2>
+            <p class="text-center">Please fill this form to create an account.</p>
             <div class="form-group">
                 <label>Username</label>
                 <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
@@ -152,8 +160,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="submit" class="btn btn-primary" value="Submit">
                 <input type="reset" class="btn btn-secondary ml-2" value="Reset">
             </div>
-            <p>Already have an account? <a href="login.php">Login here</a>.</p>
+            <p class="text-center">Don't have an account? <a href="register.php">Sign up now</a>.</p><!--button voor registreer account-->
+            <p class="text-center"><a href="reset-password.php" class="btn btn-warning">Reset Your Password</a></p><!--button om wachtwoord te resetten-->
         </form>
-    </div>    
+    </div>
 </body>
 </html>
