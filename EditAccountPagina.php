@@ -78,7 +78,7 @@ if(!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] != true){
             </div>
         </div>
     </main>
-    <?php include 'footer.php'; ?>
+    <?php include 'footer.php';  ?>
     <script src="EditAccountJS.js"></script>
 </body>
 </html>
