@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Display the search results
   if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-      echo "username: " . $row["username"] . "<br>";
+      echo "user in database: " . $row["username"] . "<br>";
     }
   } else {
     echo "No results found";

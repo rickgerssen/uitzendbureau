@@ -53,13 +53,13 @@
         </div>
     </div>
 </nav>
+<center>
 <h1>admin pagina</h1>
-
 <form method="post" action="search.php">
-  <input type="text" name="search" placeholder="Search...">
+  <input type="text" name="search" placeholder="Search all or type name">
   <button type="submit">Search</button>
 </form>
-
+</center>
 <footer>
         <div class="footer-top col-lg-6">
         <h3>
