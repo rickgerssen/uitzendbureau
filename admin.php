@@ -55,8 +55,8 @@
 </nav>
 <h1>admin pagina</h1>
 
-<form><!--search form-->
-  <input type="text" placeholder="Search...">
+<form method="post" action="search.php">
+  <input type="text" name="search" placeholder="Search...">
   <button type="submit">Search</button>
 </form>
 
