@@ -47,6 +47,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
+          <li><a href="chat">Chat</a></li>
               <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                       Language <span class="caret"></span>
@@ -56,7 +57,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                   </ul>
               </li>
               <li><a href="#">File</a></li>
-              <li><a href="#">Account</a></li>
+              <li><a href="editaccountpagina">Account</a></li>
               <li><a href="logout.php">Sign Out of Your Account</a></li>
               <li><a><b><?php echo htmlspecialchars($_SESSION["username"]); ?><b></a></li>
               

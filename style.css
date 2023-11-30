@@ -108,20 +108,33 @@ footer {
     display: none;
   }
 }
+
 #chat-container {
   max-width: 400px;
   margin: 50px auto;
   padding: 20px;
   border: 1px solid #ccc;
+  background-color: #fff;
 }
 
 #chat-output {
-  height: 200px;
+  height: 350px;
   overflow: auto;
   border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
+  background-color: #0047AB;
+  color: #fff;
+  font-weight: 400;
+}
+@media only screen and (max-width: 1199px) {
+  #chat-output {
+    height: 280px;
+  }
+}
+#chat-output strong {
+  margin-left: 5px;
 }
 
 input, button {
   margin-top: 10px;
-}
+}/*# sourceMappingURL=style.css.map */

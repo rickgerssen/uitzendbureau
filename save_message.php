@@ -44,7 +44,7 @@ function generateChatId($conn, $userId) {
 
     // Als de gebruiker geen chat heeft, genereer en retourneer een nieuw chat-ID
     $newChatId = mt_rand(100000, 999999); // Genereer een willekeurig getal als chat-ID
-    $sql = "UPDATE messages SET chat_id = ? WHERE loggedin = ?";
+    $sql = "UPDATE messages SET chat_id = ? WHERE chat_id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ii", $newChatId, $userId);
     $stmt->execute();

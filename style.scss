@@ -113,3 +113,32 @@ img{
              }
 }
 }
+
+#chat-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  #chat-output {
+    @media only screen and (max-width: 1199px) {
+    height: 280px;
+    }
+    height: 350px;
+    overflow: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #0047AB;
+    color: #fff;
+    font-weight: 400;
+
+    strong{
+        margin-left: 5px;
+    }
+  }
+  
+  input, button {
+    margin-top: 10px;
+  }
