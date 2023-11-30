@@ -1,5 +1,13 @@
+<style>
+    body {
+        padding-bottom: 120px;
+    }
 
-    <footer>
+    .footer {
+    position: absolute;
+    }
+</style>
+<footer>
         <div class="footer-top col-lg-6">
         <h3>
             Contact
@@ -12,5 +20,5 @@
             Links
         </h3>
         <a href="index.html">homepage</a>
-</div> 
-  </footer>
+    </div> 
+</footer>
